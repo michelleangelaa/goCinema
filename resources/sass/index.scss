@@ -1,0 +1,32 @@
+.test{
+    background-color: aqua;
+}
+
+.image-card{
+    display:flex;
+}
+
+.container-fluid{
+    display:flex;
+}
+
+.movieposter img{
+    height:550px;
+    border-radius:20px 20px 2px 2px;
+}
+
+.like-section{
+    height: 30px;
+    display:flex;
+    img{
+        height:30px;
+    }
+    h6{
+        font-size:20px;
+        padding-left:10px;
+    }
+}
+
+.container-movies{
+    margin: 30px;
+}
