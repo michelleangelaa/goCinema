@@ -17,4 +17,8 @@ class Cinema extends Model
     {
         return $this->hasMany(Tickets::class);
     }
+
+    public function movies(){
+        return $this->belongsTo(Movie::class);
+    }
 }

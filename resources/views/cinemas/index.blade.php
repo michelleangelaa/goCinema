@@ -13,19 +13,21 @@
         
         <x-navbar></x-navbar>
         <main>
-            <h1>Cinemas</h1>
-            <div class="cards">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach ($bioskop as $c)
-                    <div class="col">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">{{$c->name}}</h5>
-                                <h5 class="card-title">{{$c->region}}</h5>
+            <div class="container-movies m-5">
+                <h1>Cinemas</h1>
+                <div class="cards">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    @foreach ($bioskop as $c)
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{$c->name}}</h5>
+                                    <h5 class="card-title">{{$c->region}}</h5>
+                                </div>
                             </div>
                         </div>
+                    @endforeach  
                     </div>
-                  @endforeach  
                 </div>
             </div>
         </main>

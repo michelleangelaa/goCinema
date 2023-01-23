@@ -13,23 +13,23 @@
         
         <x-navbar></x-navbar>
         <main>
-            <div class="container-movies">
+            <div class="container-movies m-5">
                 <h1>Currently Showing</h1>
                 <div class="image-cards">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="movieposter">
-                                <img src="{{ asset('/storage/images/assets/avatar.jpg') }}" class="card-img-top" alt="...">
+                                <img src="{{ asset('/storage/images/assets/avatar.jpg') }}" class="card-img-top" id="muv" alt="Avatar" style="height: 500px; border-radius: 20px 20px 2px 2px">
                             </div>
                         </div>
                         <div class="col">
                             <div class="movieposter">
-                                <img src="{{ asset('/storage/images/assets/cektokosebelah.jpg') }}" class="card-img-top" alt="...">
+                                <img src="{{ asset('/storage/images/assets/cektokosebelah.jpg') }}" class="card-img-top" id="muv" alt="Cek Toko Sebelah 2" style="height: 500px; border-radius: 20px 20px 2px 2px">
                             </div>
                         </div>
                         <div class="col">
                             <div class="movieposter">
-                                <img src="{{ asset('/storage/images/assets/m3gan.jpg') }}" class="card-img-top" alt="...">
+                                <img src="{{ asset('/storage/images/assets/m3gan.jpg') }}" class="card-img-top" id="muv" alt="M3GAN" style="height: 500px; border-radius: 20px 20px 2px 2px">
                             </div>
                         </div>
 
@@ -44,10 +44,10 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$c->title}}</h5>
                                 <div class = "like-section">
-                                    <a href="">
-                                    <img src = "{{ asset('/storage/images/assets/like.png') }}" ></a>
-                                    <h6 class="card-text">{{$c->likes}}</h6>
-                                    
+                                    {{-- <a href=""> --}}
+                                    {{-- <img src = "{{ asset('/storage/images/assets/like.png') }}" ></a> --}}
+                                    <h6 class="card-text">{{$c->likes}} likes</h6>       
+                                    <button type="button" class="btn btn-secondary">Delete</button>
                                 </div>
                             </div>
                             </div>
@@ -65,17 +65,17 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="movieposter" style="">
-                            <img src="{{ asset('/storage/images/assets/thequietgirl.jpg') }}" class="card-img-top" alt="...">
+                            <img src="{{ asset('/storage/images/assets/thequietgirl.jpg') }}" class="card-img-top" id="muv" alt="The Quiet Girl" style="height: 500px; border-radius: 20px 20px 2px 2px">
                         </div>
                     </div>
                     <div class="col">
                         <div class="movieposter" style="">
-                            <img src="{{ asset('/storage/images/assets/amancalledotto.jpg') }}" class="card-img-top" alt="...">
+                            <img src="{{ asset('/storage/images/assets/amancalledotto.jpg') }}" class="card-img-top" id="muv" alt="A man Called Otto" style="height: 500px; border-radius: 20px 20px 2px 2px">
                         </div>
                     </div>
                     <div class="col">
                         <div class="movieposter" style="">
-                            <img src="{{ asset('/storage/images/assets/infinitypool.jpg') }}" class="card-img-top" alt="...">
+                            <img src="{{ asset('/storage/images/assets/infinitypool.jpg') }}" class="card-img-top" id="muv" alt="Infinity Pool" style="height: 500px; border-radius: 20px 20px 2px 2px">
                         </div>
                     </div>
 
@@ -88,9 +88,10 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">{{$u->title}}</h5>
-                                <div class = "like-section" style="display:flex;height: 30px">
-                                    <img src = "{{ asset('/storage/images/assets/like.png') }}" >
-                                    <h6 class="card-text">{{$u->likes}}</h6>
+                                <div class = "like-section">
+                                    {{-- <img src = "{{ asset('/storage/images/assets/like.png') }}" > --}}
+                                    <h6 class="card-text">{{$u->likes}} likes</h6>
+                                    <button type="button" class="btn btn-secondary">Delete</button>
                                 </div>
                             </div>
                         </div>

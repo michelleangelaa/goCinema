@@ -10,10 +10,22 @@
     display:flex;
 }
 
-.movieposter img{
-    height:550px;
-    border-radius:20px 20px 2px 2px;
-}
+// .movieposter img{
+//     height:550px;
+//     border-radius:20px 20px 2px 2px;
+// }
+
+// .movieposter{
+//     height:550px;
+//     border-radius:20px 20px 2px 2px;
+// }
+
+// .card-img-top{
+//     img{
+//         height:1000px !important;
+//         border-radius:20px 20px 2px 2px;
+//     }
+// }
 
 .like-section{
     height: 30px;
@@ -29,4 +41,21 @@
 
 .container-movies{
     margin: 30px;
+}
+
+.nav-item{
+    margin-right:20px;
+    padding-left:20px;
+}
+
+.space{
+    margin-right:20px;
+}
+
+#muv{
+    height:200px;
+}
+
+button{
+    border-radius: 0px;
 }

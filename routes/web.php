@@ -26,9 +26,10 @@ Route::get('movies/index', function(){
     return view('movies.index');
 });
 Route::resource('cinemas', CinemaController::class);
-Route::get('cinemas/index', function(){
-    return view('cinemas.index');
-});
+Route::resource('footer', CinemaController::class);
+// Route::get('cinemas/index', function(){
+//     return view('cinemas.index');
+// });
 
 Route::view('welcome', 'movies/index', [
     'title' => 'Avatar',

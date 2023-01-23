@@ -15,11 +15,11 @@ class Ticket extends Model
 
     public function cinemas()
     {
-        return $this->hasMany(Cinemas::class);
+        return $this->belongsTo(Cinemas::class);
     }
     
     public function movies()
     {
-        return $this->hasMany(Cinemas::class);
+        return $this->belongsTo(Cinemas::class);
     }
 }
